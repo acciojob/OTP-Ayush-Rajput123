@@ -18,3 +18,11 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 const codepaste = e.clipboardData.getData('text');
 const digitArray = codepaste.replace(/\D/g, '').split('');
+digitArray.forEach((d, i) => {
+if (i < codes.length) codes[i].value = d;
+});
+if (digitArray.length < codes.length) {
+codes[digitArray.length].focus();
+} else {
+codes[codes.length - 1].focus();
+}
