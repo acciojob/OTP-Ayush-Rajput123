@@ -9,4 +9,7 @@
 .code{
 	height:100px;
 	width:100px;
+	font-size:72px;
+	margin:2px;
+	border:none;
 }
